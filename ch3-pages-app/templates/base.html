@@ -1,0 +1,9 @@
+{% load staticfiles %}
+        <title>My page</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+        <header>
+            <a href="{% url 'home' %}">Home</a> | <a href="{% url 'about' %}">About</a> | <a href="{% url 'podstronka' %}">Podstronka</a>
+        </header>
+
+{% block content %}
+{% endblock content %}
